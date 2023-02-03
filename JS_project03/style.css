@@ -41,25 +41,6 @@
 }
 
 
-@keyframes colorchange{
-  0%{
-      color: rgb(130, 0, 130);
-  }
-  20%{
-      color: rgb(16, 16, 240);
-  }
-  40%{
-      color: rgb(105, 0, 128);
-  }
-  60%{
-      color: rgb(19, 19, 6);
-  }
-  80%{
-      color: rgb(95, 101, 171);
-  }
-  100%{
-      color: rgb(129, 4, 52);
-  }
 
 #click{
   padding: 10px 20px ;
