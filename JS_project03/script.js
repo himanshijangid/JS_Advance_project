@@ -33,7 +33,7 @@ function generateQuote() {
 
     var authors = Object.keys(quotes);
 
-     var author = authors[Math.floor(Math.random()* author.length)];
+     var author = authors[Math.floor(Math.random() * authors.length)];
 
      var quote = quotes[author];
 
