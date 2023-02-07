@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <title>color_change</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    
+    <title>Pass the Message</title>
    
 </head>
 <body>
-     <!-- HEADER START -->
-     <div class="menu-bar">
+    <!-- HEADER START -->
+    <div class="menu-bar">
       <img src="logo.png" alt="logo" class="logo-self">
       <h1 class="logo">Himanshi <span>Jangid</span></h1>
 
@@ -43,9 +45,28 @@
   </div>
 
     <!-- HEADER END -->
-   
-    <div class="container">
-        <button onclick="changeColors()" type="button" class="btn btn-primary">Click Me</button>
+   <div class="container">
+      <div class="message">
+        <p>
+          <h3 style="text-align: center;">Pass the Message</h3>
+          <p style="border-bottom: 2px solid black;"></p>
+
+        </p>
+        <p>
+          <label for="massage-input">Enter a Message</label>
+          <br>
+          <button style="border-radius: 5px 0 0 5px" ><i class="fa-regular fa-envelope"></i></button>
+          <input id="massage-input" type="text" >
+         </p>
+
+         <p><button Onclick="getMessage()">Submit</button>
+        </p>
+         <p id="message-output" style="text-align: center; text-transform:uppercase; "></p>
+
+      </div>
+  </div>
+
+
 
     </div>
      <!-- footer start -->
