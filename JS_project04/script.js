@@ -1,6 +1,15 @@
-var count=0;
+const messageInput = document.getElementById("message-input");
 
-function changeCount(num){
-    count += num;
-    document.getElementById("count").innerHTML=count;
+messageInput.addEventListener("keydown", function(event){
+    console.log(event)
+    if (event.key == "Enter"){
+    getMessage();
+    }
+})
+
+function getMessage(){
+    document.getElementById("message-output").innerHTML = messageInput.value;
+    messageInput.value = "";
 }
+
+
