@@ -1,104 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+#heading{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #050505;
+    text-align: center;
+    /* position: absolute; */
+    padding: 20px;
+}
 
 .body{
-    padding: 0;
-    margin: 0;
-    height: 83.2vh;
-    background: #2A2734;
+    /* background-color: #212534; */
+    background: url(./pic.jpg) no-repeat center;
+    background-size: cover;
+    height: 81vh;
+    
+    
+    
+}
+
+/* ======================== */
+/* Everything here is pretty straight forward so I don't think I have to explain.*/
+#butt{
+    display: flex;
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+}
+.button{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(./pic.jpg) no-repeat center;
- background-size: cover;
-}
-
-ul{
-    display: flex;
-}
-li{
-    list-style: none;
-}
-
-.div{
-    height: 80px;
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    cursor: pointer;
-    margin: 0 4px;
-    border-radius: 20px;
-    color: yellow;
-    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-    animation: animate 1.5s linear infinite;
-}
-
-@keyframes animate{
-    0%{
-        filter: hue-rotate(0deg);
-    }
-    100%{
-        filter: hue-rotate(360deg);
-    }
-}
-
-.quotes{
-    width: 800px;
-    height: 400px;
-    margin: auto;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 50px;
-    color: blue;
-    /* background-color: rgba(255, 192, 203, 0.288); */
-    /* border: 10px solid sandybrown; */
+    /* justify-content: space-between; */
+    color: #060202;
+    text-decoration: none;
+    padding: 20px 30px;
+    border: 3px solid #0b0b0e;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    width: 230px;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    
 }
 
-.quotes p, .quote h3{
-    font-size: 1.5rem;
+.button:hover{
+    animation: pulsate 1s 
+    ease-in-out; /*The pulsate animation is added on hover. You could also add this on .button:focus and it will add it when clicking the button as well.*/
 }
 
-@media(max-width: 480px){
-    .quotes p, .quote h3{
-        font-size: 1rem;
-}}
-.container h1{
-    font-size: 2rem;
-    text-transform: uppercase;
-    animation: colorchange 5s infinite alternate;
-}
-@keyframes colorchange{
+@keyframes pulsate {
+    /* 
+        Here we have two shadows. You can add as many as you want by using different offset values as long as you separate it with a comma.
+        The values are as follow: offset-x | offset-y | blur-radius | color
+    */
     0%{
-        color: indigo;
+        box-shadow: 
+        0 0 25px #0a0a0a,
+        0 0 50px #c20000;
     }
-    20%{
-        color: blue;
-    }
-    40%{
-        color: green;
-    }
-    60%{
-        color: yellow;
-    }
-    80%{
-        color: orange;
-    }
-    100%{
-        color: red;
-    }
-}
-
-.btn-info{
-    margin-bottom: 10px;
-}
-
-#author{
-
-    margin-top: 20px;
-    margin-left: 500px;
-    font-size: 1.5rem;
 }
