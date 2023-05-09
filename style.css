@@ -18,7 +18,8 @@ body{
     /* background-color: #212534; */
     background: url(./pic.jpg) no-repeat center;
     background-size: cover;
-    height: 81vh;
+    height: 100%;
+    width: 100%;
     
     
     
